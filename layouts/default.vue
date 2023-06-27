@@ -8,7 +8,7 @@
         <div class="flex items-center">
           <router-link to="/checkout" class="flex items-center justify-center bg-orange-500 rounded-full text-white p-2">
             <font-awesome-icon :icon="['fas', 'cart-shopping']" class="h-6 w-6" />
-            <span class="ml-2">{{ cartItemCount }}</span>
+            <span v-show="cartItemCount" class="ml-2">{{ cartItemCount }}</span>
           </router-link>
           <router-link to="/orders" class="ml-4">My Orders</router-link>
         </div>
