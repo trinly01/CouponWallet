@@ -2,11 +2,11 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "build": "npx nuxi clean && nuxt build",
+    "dev": "npx nuxi clean && nuxt dev",
+    "generate": "npx nuxi clean && nuxt generate",
+    "preview": "npx nuxi clean && nuxt preview",
+    "postinstall": "npx nuxi clean && nuxt prepare"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
